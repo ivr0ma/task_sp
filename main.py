@@ -1,4 +1,5 @@
 import os
+import matplotlib.pyplot as plt
 data_name = 'data'  # папка с набором данных
 
 current_path = str(os.getcwd())  # текущий путь
@@ -20,3 +21,12 @@ for app in list_app:
 
 print("number of traces in the dataset:", trace_all_count)
 print(trace_count)
+
+index_trace = []
+values_trace = []
+for trace in trace_count:
+    index_trace.append(trace)
+    values_trace.append(trace_count[trace])
+
+plt.bar(index_trace, values_trace)
+plt.show()
