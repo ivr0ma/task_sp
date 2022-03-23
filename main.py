@@ -21,7 +21,7 @@ for app in list_app:
 
 print("number of traces in the dataset:", trace_all_count)
 
-# выводим гистограмму длин трасс
+# выводим гистограмму кол-ва трасс
 index_trace = []
 values_trace = []
 for trace in trace_count:
